@@ -226,7 +226,7 @@ class DbPatch_Core_Writer
 
         $stream = null;
 
-        if ($pallet != 'info') {
+        if ($pallet != 'info' && $pallet != 'success' && $pallet != 'debug' ) {
             $stream = STDERR;
         }
         return $this->output($message, $stream);
